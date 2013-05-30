@@ -1,6 +1,7 @@
 Pod::Spec.new do |s|
   s.name     	 = 'LXReceiptStore'
   s.version  	 = '0.1'
+  s.license  = { :type => 'MIT' }
   s.summary  	 = 'LXReceiptStore provides a simpler interface aims at helping you make sense out of your In-App Purchase receipts.'
   s.homepage 	 = 'https://github.com/lxcid/LXReceiptStore'
   s.author   	 = { 'lxcid' => "holger@uninkd.com" }
