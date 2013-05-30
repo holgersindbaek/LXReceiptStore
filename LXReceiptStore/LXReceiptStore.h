@@ -52,7 +52,7 @@ typedef void (^LXReceiptStoreSubscriptionsSuccessBlock)(LXReceiptStore *theRecei
 
 #pragma mark - Payment Related Methods
 
-- (void)addPayment:(SKPayment *)thePayment succcess:(LXReceiptStoreAddPaymentSuccessBlock)theSuccess failure:(LXReceiptStoreGenericFailureBlock)theFailure;
+- (void)addPayment:(SKPayment *)thePayment success:(LXReceiptStoreAddPaymentSuccessBlock)theSuccess failure:(LXReceiptStoreGenericFailureBlock)theFailure;
 - (void)restoreCompletedTransactionsWithSuccess:(LXReceiptStoreGenericSuccessBlock)theSuccess failure:(LXReceiptStoreGenericFailureBlock)theFailure;
 
 - (void)insertTransactionReceipt:(NSData *)theTransactionReceipt success:(LXReceiptStoreInsertTransactionDataSuccessBlock)theSuccess failure:(LXReceiptStoreGenericFailureBlock)theFailure;

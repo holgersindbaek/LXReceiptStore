@@ -411,7 +411,7 @@ static NSString *LXReceiptStoreSelectFromReceiptTableSQL = @"SELECT * FROM `rece
 #pragma mark - Payment Related Methods
 
 
-- (void)addPayment:(SKPayment *)thePayment succcess:(LXReceiptStoreAddPaymentSuccessBlock)theSuccess failure:(LXReceiptStoreGenericFailureBlock)theFailure {
+- (void)addPayment:(SKPayment *)thePayment success:(LXReceiptStoreAddPaymentSuccessBlock)theSuccess failure:(LXReceiptStoreGenericFailureBlock)theFailure {
     if (![SKPaymentQueue canMakePayments]) {
         NSDictionary *theUserInfo = @{
         NSLocalizedDescriptionKey : @"Fails to add payment because user is not allowed to authorize payment.",
